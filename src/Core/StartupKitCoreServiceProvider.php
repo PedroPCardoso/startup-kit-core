@@ -16,6 +16,7 @@ use Cardoso\StartupKit\Core\Contracts\Outbox;
 use Cardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
 use Cardoso\StartupKit\Core\Contracts\Tracer;
 use Cardoso\StartupKit\Core\Contracts\UnitOfWork;
+use Cardoso\StartupKit\Core\Drivers\DriverBootstrap;
 use Cardoso\StartupKit\Core\Drivers\DriverRegistry;
 use Cardoso\StartupKit\Core\EventBus\DatabaseUnitOfWork;
 use Cardoso\StartupKit\Core\EventBus\DbOutbox;
@@ -76,6 +77,13 @@ final class StartupKitCoreServiceProvider extends ServiceProvider
             return new DriverRegistry();
         });
 
+        $this->app->singleton(DriverBootstrap::class, function ($app) {
+            return new DriverBootstrap(
+                config: $app->make(\Illuminate\Contracts\Config\Repository::class),
+                container: $app,
+            );
+        });
+
         $this->app->singleton(HealthService::class, function ($app) {
             return new HealthService($app->make(ResilientDriverRegistry::class));
         });
@@ -86,6 +94,10 @@ final class StartupKitCoreServiceProvider extends ServiceProvider
 
         $this->app->singleton(StartupService::class, function ($app) {
             return new StartupService($app->make(ResilientDriverRegistry::class));
+        });
+
+        $this->app->afterResolving(ResilientDriverRegistry::class, function (ResilientDriverRegistry $registry, $app): void {
+            $app->make(DriverBootstrap::class)->registerConfiguredDrivers($registry);
         });
     }
 
