@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\ValueObjects;
+namespace PedroPCardoso\StartupKit\Core\ValueObjects;
 
 final class Cnpj implements \JsonSerializable
 {

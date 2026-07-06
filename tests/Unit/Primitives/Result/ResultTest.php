@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Unit\Primitives\Result;
+namespace PedroPCardoso\StartupKit\Core\Tests\Unit\Primitives\Result;
 
-use Cardoso\StartupKit\Core\Primitives\Errors\NotFoundError;
-use Cardoso\StartupKit\Core\Primitives\Errors\ValidationError;
-use Cardoso\StartupKit\Core\Primitives\Result\Result;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\NotFoundError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\ValidationError;
+use PedroPCardoso\StartupKit\Core\Primitives\Result\Result;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Primitives\Cqrs\Middleware;
+namespace PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Middleware;
 
-use Cardoso\StartupKit\Core\Contracts\Logger;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\Command;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\Middleware;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\Query;
-use Cardoso\StartupKit\Core\Primitives\Result\Result;
+use PedroPCardoso\StartupKit\Core\Contracts\Logger;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Command;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Middleware;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Query;
+use PedroPCardoso\StartupKit\Core\Primitives\Result\Result;
 
 final class LoggingMiddleware implements Middleware
 {

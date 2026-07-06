@@ -2,31 +2,31 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core;
+namespace PedroPCardoso\StartupKit\Core;
 
-use Cardoso\StartupKit\Core\Api\Http\HealthController;
-use Cardoso\StartupKit\Core\Api\Http\ShutdownController;
-use Cardoso\StartupKit\Core\Api\Http\StartupController;
-use Cardoso\StartupKit\Core\Api\Services\HealthService;
-use Cardoso\StartupKit\Core\Api\Services\ShutdownService;
-use Cardoso\StartupKit\Core\Api\Services\StartupService;
-use Cardoso\StartupKit\Core\Contracts\EventBus;
-use Cardoso\StartupKit\Core\Contracts\Logger;
-use Cardoso\StartupKit\Core\Contracts\Outbox;
-use Cardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
-use Cardoso\StartupKit\Core\Contracts\Tracer;
-use Cardoso\StartupKit\Core\Contracts\UnitOfWork;
-use Cardoso\StartupKit\Core\Drivers\DriverBootstrap;
-use Cardoso\StartupKit\Core\Drivers\DriverRegistry;
-use Cardoso\StartupKit\Core\EventBus\DatabaseUnitOfWork;
-use Cardoso\StartupKit\Core\EventBus\DbOutbox;
-use Cardoso\StartupKit\Core\EventBus\QueueEventBus;
-use Cardoso\StartupKit\Core\Logging\MultiChannelLogger;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\CommandBus;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\QueryBus;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\SimpleCommandBus;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\SimpleQueryBus;
-use Cardoso\StartupKit\Core\Primitives\Tracing\NoopTracer;
+use PedroPCardoso\StartupKit\Core\Api\Http\HealthController;
+use PedroPCardoso\StartupKit\Core\Api\Http\ShutdownController;
+use PedroPCardoso\StartupKit\Core\Api\Http\StartupController;
+use PedroPCardoso\StartupKit\Core\Api\Services\HealthService;
+use PedroPCardoso\StartupKit\Core\Api\Services\ShutdownService;
+use PedroPCardoso\StartupKit\Core\Api\Services\StartupService;
+use PedroPCardoso\StartupKit\Core\Contracts\EventBus;
+use PedroPCardoso\StartupKit\Core\Contracts\Logger;
+use PedroPCardoso\StartupKit\Core\Contracts\Outbox;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
+use PedroPCardoso\StartupKit\Core\Contracts\Tracer;
+use PedroPCardoso\StartupKit\Core\Contracts\UnitOfWork;
+use PedroPCardoso\StartupKit\Core\Drivers\DriverBootstrap;
+use PedroPCardoso\StartupKit\Core\Drivers\DriverRegistry;
+use PedroPCardoso\StartupKit\Core\EventBus\DatabaseUnitOfWork;
+use PedroPCardoso\StartupKit\Core\EventBus\DbOutbox;
+use PedroPCardoso\StartupKit\Core\EventBus\QueueEventBus;
+use PedroPCardoso\StartupKit\Core\Logging\MultiChannelLogger;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\CommandBus;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\QueryBus;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\SimpleCommandBus;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\SimpleQueryBus;
+use PedroPCardoso\StartupKit\Core\Primitives\Tracing\NoopTracer;
 use Illuminate\Support\ServiceProvider;
 
 final class StartupKitCoreServiceProvider extends ServiceProvider

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\EventBus;
+namespace PedroPCardoso\StartupKit\Core\EventBus;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

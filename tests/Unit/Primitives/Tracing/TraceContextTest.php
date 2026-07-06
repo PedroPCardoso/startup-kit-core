@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Unit\Primitives\Tracing;
+namespace PedroPCardoso\StartupKit\Core\Tests\Unit\Primitives\Tracing;
 
-use Cardoso\StartupKit\Core\Primitives\Tracing\TraceContext;
+use PedroPCardoso\StartupKit\Core\Primitives\Tracing\TraceContext;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 

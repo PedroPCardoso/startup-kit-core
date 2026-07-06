@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Unit\Primitives\Result;
+namespace PedroPCardoso\StartupKit\Core\Tests\Unit\Primitives\Result;
 
-use Cardoso\StartupKit\Core\Primitives\Errors\ConflictError;
-use Cardoso\StartupKit\Core\Primitives\Errors\DomainError;
-use Cardoso\StartupKit\Core\Primitives\Errors\ForbiddenError;
-use Cardoso\StartupKit\Core\Primitives\Errors\NotFoundError;
-use Cardoso\StartupKit\Core\Primitives\Errors\TimeoutError;
-use Cardoso\StartupKit\Core\Primitives\Errors\UnauthorizedError;
-use Cardoso\StartupKit\Core\Primitives\Errors\ValidationError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\ConflictError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\DomainError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\ForbiddenError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\NotFoundError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\TimeoutError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\UnauthorizedError;
+use PedroPCardoso\StartupKit\Core\Primitives\Errors\ValidationError;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 

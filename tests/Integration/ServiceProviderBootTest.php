@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Integration;
+namespace PedroPCardoso\StartupKit\Core\Tests\Integration;
 
-use Cardoso\StartupKit\Core\Contracts\EventBus;
-use Cardoso\StartupKit\Core\Contracts\Logger;
-use Cardoso\StartupKit\Core\Contracts\Outbox;
-use Cardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
-use Cardoso\StartupKit\Core\Contracts\Tracer;
-use Cardoso\StartupKit\Core\Contracts\UnitOfWork;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\CommandBus;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\QueryBus;
-use Cardoso\StartupKit\Core\StartupKitCoreServiceProvider;
+use PedroPCardoso\StartupKit\Core\Contracts\EventBus;
+use PedroPCardoso\StartupKit\Core\Contracts\Logger;
+use PedroPCardoso\StartupKit\Core\Contracts\Outbox;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
+use PedroPCardoso\StartupKit\Core\Contracts\Tracer;
+use PedroPCardoso\StartupKit\Core\Contracts\UnitOfWork;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\CommandBus;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\QueryBus;
+use PedroPCardoso\StartupKit\Core\StartupKitCoreServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 final class ServiceProviderBootTest extends TestCase

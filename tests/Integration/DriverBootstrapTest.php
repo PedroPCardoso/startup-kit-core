@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Integration;
+namespace PedroPCardoso\StartupKit\Core\Tests\Integration;
 
-use Cardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
-use Cardoso\StartupKit\Core\StartupKitCoreServiceProvider;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
+use PedroPCardoso\StartupKit\Core\StartupKitCoreServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 final class DriverBootstrapTest extends TestCase

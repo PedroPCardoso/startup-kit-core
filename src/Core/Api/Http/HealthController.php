@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Api\Http;
+namespace PedroPCardoso\StartupKit\Core\Api\Http;
 
-use Cardoso\StartupKit\Core\Api\Services\HealthService;
+use PedroPCardoso\StartupKit\Core\Api\Services\HealthService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;
 

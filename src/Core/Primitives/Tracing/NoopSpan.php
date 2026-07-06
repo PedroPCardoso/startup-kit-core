@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Primitives\Tracing;
+namespace PedroPCardoso\StartupKit\Core\Primitives\Tracing;
 
-use Cardoso\StartupKit\Core\Contracts\Span;
+use PedroPCardoso\StartupKit\Core\Contracts\Span;
 
 final class NoopSpan implements Span
 {

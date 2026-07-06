@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\EventBus;
+namespace PedroPCardoso\StartupKit\Core\EventBus;
 
-use Cardoso\StartupKit\Core\Contracts\EventBus;
+use PedroPCardoso\StartupKit\Core\Contracts\EventBus;
 use Illuminate\Contracts\Queue\Queue;
 
 final class QueueEventBus implements EventBus

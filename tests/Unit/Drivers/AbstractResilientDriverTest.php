@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Unit\Drivers;
+namespace PedroPCardoso\StartupKit\Core\Tests\Unit\Drivers;
 
-use Cardoso\StartupKit\Core\Contracts\HealthCheckResult;
-use Cardoso\StartupKit\Core\Drivers\AbstractResilientDriver;
+use PedroPCardoso\StartupKit\Core\Contracts\HealthCheckResult;
+use PedroPCardoso\StartupKit\Core\Drivers\AbstractResilientDriver;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 

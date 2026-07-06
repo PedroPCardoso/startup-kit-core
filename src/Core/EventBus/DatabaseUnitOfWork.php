@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\EventBus;
+namespace PedroPCardoso\StartupKit\Core\EventBus;
 
-use Cardoso\StartupKit\Core\Contracts\UnitOfWork;
+use PedroPCardoso\StartupKit\Core\Contracts\UnitOfWork;
 use Illuminate\Database\ConnectionInterface as DatabaseConnection;
 
 final class DatabaseUnitOfWork implements UnitOfWork

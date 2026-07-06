@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Drivers\Database;
+namespace PedroPCardoso\StartupKit\Core\Drivers\Database;
 
-use Cardoso\StartupKit\Core\Contracts\HealthCheckResult;
-use Cardoso\StartupKit\Core\Drivers\AbstractResilientDriver;
+use PedroPCardoso\StartupKit\Core\Contracts\HealthCheckResult;
+use PedroPCardoso\StartupKit\Core\Drivers\AbstractResilientDriver;
 use Illuminate\Database\DatabaseManager;
 
 final class DatabaseDriver extends AbstractResilientDriver

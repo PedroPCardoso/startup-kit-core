@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Contracts;
+namespace PedroPCardoso\StartupKit\Core\Contracts;
 
-use Cardoso\StartupKit\Core\Primitives\Result\Result;
+use PedroPCardoso\StartupKit\Core\Primitives\Result\Result;
 
 interface Notifier
 {

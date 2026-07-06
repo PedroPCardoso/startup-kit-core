@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Unit\Primitives\Cqrs;
+namespace PedroPCardoso\StartupKit\Core\Tests\Unit\Primitives\Cqrs;
 
-use Cardoso\StartupKit\Core\Primitives\Cqrs\Command;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\CommandBus;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\CommandHandler;
-use Cardoso\StartupKit\Core\Primitives\Cqrs\SimpleCommandBus;
-use Cardoso\StartupKit\Core\Primitives\Result\Result;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Command;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\CommandBus;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\CommandHandler;
+use PedroPCardoso\StartupKit\Core\Primitives\Cqrs\SimpleCommandBus;
+use PedroPCardoso\StartupKit\Core\Primitives\Result\Result;
 use Illuminate\Container\Container;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
@@ -74,13 +74,13 @@ final class TestCommandHandler implements CommandHandler
             return Result::ok('handled: ' . $command->value);
         }
 
-        return Result::err(new \Cardoso\StartupKit\Core\Primitives\Errors\NotFoundError('mismatch', ''));
+        return Result::err(new \PedroPCardoso\StartupKit\Core\Primitives\Errors\NotFoundError('mismatch', ''));
     }
 }
 
-final class TestMiddleware implements \Cardoso\StartupKit\Core\Primitives\Cqrs\Middleware
+final class TestMiddleware implements \PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Middleware
 {
-    public function handle(\Cardoso\StartupKit\Core\Primitives\Cqrs\Command|\Cardoso\StartupKit\Core\Primitives\Cqrs\Query $message, callable $next): Result
+    public function handle(\PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Command|\PedroPCardoso\StartupKit\Core\Primitives\Cqrs\Query $message, callable $next): Result
     {
         return $next($message);
     }

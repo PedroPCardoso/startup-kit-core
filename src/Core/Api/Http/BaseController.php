@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Api\Http;
+namespace PedroPCardoso\StartupKit\Core\Api\Http;
 
-use Cardoso\StartupKit\Core\Primitives\Result\Result;
+use PedroPCardoso\StartupKit\Core\Primitives\Result\Result;
 use Illuminate\Http\JsonResponse;
 
 abstract class BaseController

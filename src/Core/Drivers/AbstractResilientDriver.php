@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Drivers;
+namespace PedroPCardoso\StartupKit\Core\Drivers;
 
-use Cardoso\StartupKit\Core\Contracts\HealthCheckResult;
-use Cardoso\StartupKit\Core\Contracts\ResilientDriver;
+use PedroPCardoso\StartupKit\Core\Contracts\HealthCheckResult;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriver;
 
 abstract class AbstractResilientDriver implements ResilientDriver
 {

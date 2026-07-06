@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Api\Services;
+namespace PedroPCardoso\StartupKit\Core\Api\Services;
 
-use Cardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
 
 final class ShutdownService
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Primitives\Errors;
+namespace PedroPCardoso\StartupKit\Core\Primitives\Errors;
 
 abstract class DomainError implements Error
 {

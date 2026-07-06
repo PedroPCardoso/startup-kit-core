@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Drivers;
+namespace PedroPCardoso\StartupKit\Core\Drivers;
 
-use Cardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
-use Cardoso\StartupKit\Core\Drivers\Database\DatabaseDriver;
-use Cardoso\StartupKit\Core\Drivers\Redis\RedisDriver;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
+use PedroPCardoso\StartupKit\Core\Drivers\Database\DatabaseDriver;
+use PedroPCardoso\StartupKit\Core\Drivers\Redis\RedisDriver;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
@@ -47,7 +47,7 @@ final class DriverBootstrap
         return (bool) ($settings['enabled'] ?? true);
     }
 
-    private function makeDriver(string $name, string $adapter, ?string $connection): \Cardoso\StartupKit\Core\Contracts\ResilientDriver
+    private function makeDriver(string $name, string $adapter, ?string $connection): \PedroPCardoso\StartupKit\Core\Contracts\ResilientDriver
     {
         return match ($adapter) {
             'redis' => $this->makeRedisDriver($name, $adapter, $connection),
@@ -64,7 +64,7 @@ final class DriverBootstrap
         };
     }
 
-    private function makeRedisDriver(string $name, string $adapter, ?string $connection): \Cardoso\StartupKit\Core\Contracts\ResilientDriver
+    private function makeRedisDriver(string $name, string $adapter, ?string $connection): \PedroPCardoso\StartupKit\Core\Contracts\ResilientDriver
     {
         if (!$this->container->bound(RedisFactory::class)) {
             return new UnavailableDriver(
@@ -84,7 +84,7 @@ final class DriverBootstrap
         );
     }
 
-    private function makeDatabaseDriver(string $name, string $adapter, ?string $connection): \Cardoso\StartupKit\Core\Contracts\ResilientDriver
+    private function makeDatabaseDriver(string $name, string $adapter, ?string $connection): \PedroPCardoso\StartupKit\Core\Contracts\ResilientDriver
     {
         if (!$this->container->bound('db')) {
             return new UnavailableDriver(

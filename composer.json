@@ -1,5 +1,5 @@
 {
-    "name": "cardoso/startup-kit-core",
+    "name": "pedropardoso/startup-kit-core",
     "description": "Startup Kit — Core package: primitives, value objects, contracts, and cross-cutting infrastructure",
     "type": "library",
     "license": "MIT",
@@ -21,18 +21,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Cardoso\\StartupKit\\Core\\": "src/Core/"
+            "PedroPCardoso\\StartupKit\\Core\\": "src/Core/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cardoso\\StartupKit\\Core\\Tests\\": "tests/"
+            "PedroPCardoso\\StartupKit\\Core\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Cardoso\\StartupKit\\Core\\StartupKitCoreServiceProvider"
+                "PedroPCardoso\\StartupKit\\Core\\StartupKitCoreServiceProvider"
             ]
         }
     },

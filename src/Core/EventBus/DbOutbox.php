@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\EventBus;
+namespace PedroPCardoso\StartupKit\Core\EventBus;
 
-use Cardoso\StartupKit\Core\Contracts\Outbox;
+use PedroPCardoso\StartupKit\Core\Contracts\Outbox;
 use Illuminate\Database\ConnectionInterface as DatabaseConnection;
 use Illuminate\Contracts\Queue\Queue;
 use Carbon\CarbonImmutable;

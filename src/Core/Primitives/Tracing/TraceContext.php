@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Primitives\Tracing;
+namespace PedroPCardoso\StartupKit\Core\Primitives\Tracing;
 
 final class TraceContext implements \JsonSerializable
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Logging;
+namespace PedroPCardoso\StartupKit\Core\Logging;
 
-use Cardoso\StartupKit\Core\Contracts\Logger;
-use Cardoso\StartupKit\Core\Contracts\Tracer;
+use PedroPCardoso\StartupKit\Core\Contracts\Logger;
+use PedroPCardoso\StartupKit\Core\Contracts\Tracer;
 use Psr\Log\LoggerInterface as PsrLogger;
 
 final class MultiChannelLogger implements Logger

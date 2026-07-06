@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Primitives\Result;
+namespace PedroPCardoso\StartupKit\Core\Primitives\Result;
 
 /**
  * @template T of mixed

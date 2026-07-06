@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Cardoso\StartupKit\Core\Api\Http\HealthController;
-use Cardoso\StartupKit\Core\Api\Http\ShutdownController;
-use Cardoso\StartupKit\Core\Api\Http\StartupController;
+use PedroPCardoso\StartupKit\Core\Api\Http\HealthController;
+use PedroPCardoso\StartupKit\Core\Api\Http\ShutdownController;
+use PedroPCardoso\StartupKit\Core\Api\Http\StartupController;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix(config('startup-kit-core.routes.prefix', ''))

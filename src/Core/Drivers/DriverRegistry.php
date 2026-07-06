@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Drivers;
+namespace PedroPCardoso\StartupKit\Core\Drivers;
 
-use Cardoso\StartupKit\Core\Contracts\HealthCheckResult;
-use Cardoso\StartupKit\Core\Contracts\ResilientDriver;
-use Cardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
+use PedroPCardoso\StartupKit\Core\Contracts\HealthCheckResult;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriver;
+use PedroPCardoso\StartupKit\Core\Contracts\ResilientDriverRegistry;
 use RuntimeException;
 
 final class DriverRegistry implements ResilientDriverRegistry

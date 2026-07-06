@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Drivers\Redis;
+namespace PedroPCardoso\StartupKit\Core\Drivers\Redis;
 
-use Cardoso\StartupKit\Core\Contracts\HealthCheckResult;
-use Cardoso\StartupKit\Core\Drivers\AbstractResilientDriver;
+use PedroPCardoso\StartupKit\Core\Contracts\HealthCheckResult;
+use PedroPCardoso\StartupKit\Core\Drivers\AbstractResilientDriver;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 
 final class RedisDriver extends AbstractResilientDriver

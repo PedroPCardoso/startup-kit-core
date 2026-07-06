@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Primitives\Tracing;
+namespace PedroPCardoso\StartupKit\Core\Primitives\Tracing;
 
-use Cardoso\StartupKit\Core\Contracts\Span;
-use Cardoso\StartupKit\Core\Contracts\Tracer;
+use PedroPCardoso\StartupKit\Core\Contracts\Span;
+use PedroPCardoso\StartupKit\Core\Contracts\Tracer;
 
 final class NoopTracer implements Tracer
 {

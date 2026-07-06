@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Tests\Unit\ValueObjects;
+namespace PedroPCardoso\StartupKit\Core\Tests\Unit\ValueObjects;
 
-use Cardoso\StartupKit\Core\ValueObjects\Uuid;
+use PedroPCardoso\StartupKit\Core\ValueObjects\Uuid;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cardoso\StartupKit\Core\Contracts;
+namespace PedroPCardoso\StartupKit\Core\Contracts;
 
 interface ResilientDriver
 {
